@@ -52,7 +52,7 @@ def parse(fname, headersize=1530):
         df = pd.DataFrame(final, columns=channels)
         # insert time
         # TODO: fix default date 18/11/2014...probably recover from header
-        # TODO: fix 3906U (256Hz) freq rate
+        # TODO: fix 3906U (256Hz) freq rate...calc based in header freq
         df['time'] = pd.date_range(
             '18/11/2014',
             periods=freq*total_time_measure, freq='3906U')
