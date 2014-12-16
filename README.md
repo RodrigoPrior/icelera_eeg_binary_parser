@@ -3,16 +3,16 @@ iCelera eeg binary parser
 
 Parse iCelera binary eeg output file to csv.
 
-### Initiative
+=== Initiative ===
 
 As long as iCelera does not provide any documentation about its binary output
 file we decide to reverse engineer it.
 
-### Why?
+=== Why? ===
 
 To use the output in various statistical methods and visualization platforms.
 
-### References
+=== References ===
 
 I used some external references to decode and convert. The binary output file have some similarities to other eeg providers.
 
