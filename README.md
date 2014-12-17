@@ -28,9 +28,9 @@ Struct
 
 I used some external references to decode and convert. The binary output file have some similarities to other eeg providers.
 
-ftp://ftp.egi.com/pub/documentation/manuals/Net_Station_4.5/ff_093004.pdf
-http://wiki.neuroelectrics.com/index.php/Files_%26_Formats
-http://sccn.ucsd.edu/eeglab/testfiles/EGI/NEWTESTING/rawformat.pdf
+ftp://ftp.egi.com/pub/documentation/manuals/Net_Station_4.5/ff_093004.pdf  
+http://wiki.neuroelectrics.com/index.php/Files_%26_Formats  
+http://sccn.ucsd.edu/eeglab/testfiles/EGI/NEWTESTING/rawformat.pdf  
 
 ### TODO
 
