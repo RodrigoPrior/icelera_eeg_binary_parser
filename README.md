@@ -14,9 +14,9 @@ To use the output in various statistical methods and visualization platforms.
 
 ### Python Requirements
 
-Numpy  
-Pandas  
-Struct  
+- Numpy  
+- Pandas  
+- Struct  
 
 ### Fast Track
 
