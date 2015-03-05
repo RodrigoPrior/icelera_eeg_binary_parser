@@ -21,6 +21,7 @@ To use the output in various statistical methods and visualization platforms.
 ### Fast Track
 
     $ git clone <this project>
+    $ pip install -r requirements.txt
     $ python iceleracli.py -f example/example.dat
     $ <text editor> example/example.dat.csv
 
@@ -37,3 +38,4 @@ http://sccn.ucsd.edu/eeglab/testfiles/EGI/NEWTESTING/rawformat.pdf
 - [ ] icelera.py
   - [ ] fix input date
   - [ ] fix timeseries frequency rate
+  - [ ] make python3 compatible
