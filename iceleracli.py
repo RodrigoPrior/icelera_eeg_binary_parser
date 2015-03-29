@@ -11,7 +11,7 @@ parser.add_option(
 inputFile = options.inputFile
 
 if (inputFile is None):
-    print parser.usage
+    print (parser.usage)
     exit(0)
 
 icelera.parse(fname=inputFile)

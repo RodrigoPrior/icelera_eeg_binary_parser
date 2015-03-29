@@ -11,8 +11,6 @@ def parse(fname, headersize=1530):
     """
     infile = open(fname, "rb")
     try:
-        buff = infile.read()
-
         # deal with header
         infile.seek(0)
 
@@ -35,7 +33,6 @@ def parse(fname, headersize=1530):
 
         # initialize variables
         seconds = np.empty([0, freq])
-        output = np.empty([24, 0])
         final = np.empty([0, channels_total])
 
         # start processing
@@ -60,7 +57,8 @@ def parse(fname, headersize=1530):
         df = df.set_index(['time'])
         # save data to csv file
         df.to_csv(fname + '.csv')
-        print 'csv saved:', final.shape[0], 'lines', final.shape[1], 'columns'
+        print ('csv saved:', final.shape[0],
+               'lines', final.shape[1], 'columns')
 
     finally:
         infile.close
