@@ -14,10 +14,10 @@ To use the output in various statistical methods and visualization platforms.
 
 ### Requirements
 
-- Python2 or Python3
-- Numpy  
-- Pandas  
-- Struct  
+- Python +2.7.x or Python +3.4.x
+ - Numpy  
+ - Pandas  
+ - Struct  
 
 ### Fast Track
 
