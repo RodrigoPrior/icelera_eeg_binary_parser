@@ -26,7 +26,8 @@ def parse(fname, headersize=1530):
         freq = int(header[5])  # frequency values
         freq_bytes = freq * 2  # frequency in bytes
         channels_total = int(header[2])  # total number of channels
-        channels = [x.strip(' ') for x in header[6::6]]  # probe name no spaces
+        # probe name no spaces (decode ascii required for py3)
+        channels = [x.strip(b' ').decode('ascii') for x in header[6::6]]
 
         # position head to binary data
         infile.seek(headersize)
@@ -36,7 +37,7 @@ def parse(fname, headersize=1530):
         final = np.empty([0, channels_total])
 
         # start processing
-        for i in range(len(filesize)/freq_bytes):
+        for i in range(int(len(filesize)/freq_bytes)):
             data = infile.read(freq_bytes)
             bloco = np.asarray([struct.unpack('h'*freq, data)])
             seconds = np.append(seconds, bloco, axis=0)

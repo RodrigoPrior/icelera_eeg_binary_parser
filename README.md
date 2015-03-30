@@ -12,8 +12,9 @@ file we decide to reverse engineer it.
 
 To use the output in various statistical methods and visualization platforms.
 
-### Python Requirements
+### Requirements
 
+- Python2 or Python3
 - Numpy  
 - Pandas  
 - Struct  
@@ -38,4 +39,3 @@ http://sccn.ucsd.edu/eeglab/testfiles/EGI/NEWTESTING/rawformat.pdf
 - [ ] icelera.py
   - [ ] fix input date
   - [ ] fix timeseries frequency rate
-  - [ ] make python3 compatible
