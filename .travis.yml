@@ -8,5 +8,4 @@ install:
 
 script:
   - python iceleracli.py -f example/example.dat
-  - gunzip example/example.dat.csv.base.gz
   - diff example/example.dat.csv example/example.dat.csv.base
