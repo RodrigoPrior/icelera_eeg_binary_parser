@@ -1,6 +1,8 @@
 iCelera eeg binary parser
 =========================
 
+[![Build Status](https://travis-ci.org/RodrigoPrior/icelera_eeg_binary_parser.svg?branch=master)](https://travis-ci.org/RodrigoPrior/icelera_eeg_binary_parser)
+
 Parse iCelera binary eeg output file to csv (work in progress).
 
 ### Initiative
