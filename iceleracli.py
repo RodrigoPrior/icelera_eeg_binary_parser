@@ -1,17 +1,19 @@
-import optparse
+import argparse
 import icelera
 
-parser = optparse.OptionParser('usage %prog -f <binary file>')
 
-parser.add_option(
-    '-f', dest='inputFile', type='string',
-    help='specify binary file')
+parser = argparse.ArgumentParser(
+    prog='iceleracli',
+    description='Convert EEG timeseries (csv file) to entropy by time window.',
+    usage='python entropycli -f <binary file>'
+    )
 
-(options, args) = parser.parse_args()
-inputFile = options.inputFile
+parser.add_argument('-f', dest='inputFile', help='specify binary file')
 
-if (inputFile is None):
-    print (parser.usage)
+args = parser.parse_args()
+
+if not args.inputFile:
+    parser.print_help()
     exit(0)
 
-icelera.parse(fname=inputFile)
+icelera.parse(fname=args.inputFile)
