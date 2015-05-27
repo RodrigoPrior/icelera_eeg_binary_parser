@@ -4,8 +4,8 @@ import icelera
 
 parser = argparse.ArgumentParser(
     prog='iceleracli',
-    description='Convert EEG timeseries (csv file) to entropy by time window.',
-    usage='python entropycli -f <binary file>'
+    description='Parse iCelera binary eeg output file to csv.',
+    usage='python iceleracli -f <binary file>'
     )
 
 parser.add_argument('-f', dest='inputFile', help='specify binary file')
